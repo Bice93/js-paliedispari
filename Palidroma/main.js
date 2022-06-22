@@ -10,8 +10,14 @@
 const wordUser = prompt(`Inserisci una parola`); //chiedo all'utente una parola
 console.log(wordUser);
 
-wordToReverse (wordUser); //chiamata della funzione
 
+let invertWord = wordToReverse(wordUser);
+
+if (wordUser == invertWord){
+  console.log(`${wordUser} - sei una parola polindroma!`)
+} else {
+  console.log(`${wordUser} - non sei una parola polindroma!`)
+};
 
 
 // *****FUNZIONE*****
