@@ -30,4 +30,5 @@ function wordToReverse(insertWord) {
     index--; //condizione di uscita
   };
   console.log(invertWord)
+  return invertWord;
 };
