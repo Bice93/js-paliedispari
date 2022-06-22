@@ -1,0 +1,37 @@
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Dichiariamo chi ha vinto.
+
+//chiedo all'utente se sceglie pari o dispari
+const betUser = prompt (`Scegli tra pari o dispari`);
+console.log(betUser)
+//chiedo all'utente un numero da 1 a 5
+let numberUser = Number(prompt(`Scegli un numero da 1 a 5`));
+console.log(numberUser)
+
+
+let numberIa = randomNumber (5, 1); //richiamo la funzione random per il pc
+console.log(numberIa);
+ 
+let sum = numberUser += numberIa; //sommo i due numeri inseriti
+console.log(sum)
+
+let check = evenNumbers(sum); //richiamo la funzione per stabilire se il numero è pari o dispari
+
+// ********FUNZIONI*******
+//funzione numero random
+function randomNumber (max, min){
+   return Math.floor(Math.random() * (max - min) + min);
+};
+
+//funzione numeri pari e dispari
+function evenNumbers (number){
+    
+    if (number % 2 === 0){
+        console.log(`Il numero è pari`)
+    } else {
+        console.log(`Il numero è dispari`)
+    }
+};
