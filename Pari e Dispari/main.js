@@ -13,7 +13,7 @@ let numberUser = Number(prompt(`Scegli un numero da 1 a 5`));
 console.log(numberUser)
 
 
-let numberIa = randomNumber (); //richiamo la funzione random per il pc
+let numberIa = randomNumber (1, 6); //richiamo la funzione random per il pc
 console.log(numberIa);
  
 let sum = numberUser += numberIa; //sommo i due numeri inseriti
@@ -35,8 +35,8 @@ if ((betUser == betUserEven) && (check == true)){
 
 // ********FUNZIONI*******
 //funzione numero random
-function randomNumber (){
-   return Math.floor((Math.random()*5) + 1);
+function randomNumber (min, max){
+   return Math.floor(Math.random() * (max - min) + min);
 };
 
 //funzione numeri pari e dispari
